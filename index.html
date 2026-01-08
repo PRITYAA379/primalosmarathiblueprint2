@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Primal OS - Pritam Jagtap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primal-green': '#4ade80',
+                        'primal-dark': '#0a0a0a',
+                        'primal-gray': '#1a1a1a'
+                    },
+                    fontFamily: {
+                        'marathi': ['Mukta', 'sans-serif']
+                    },
+                    screens: {
+                        'xs': '475px',
+                    },
+                    lineHeight: {
+                        'relaxed-marathi': '1.8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+             -webkit-font-smoothing: antialiased;
+             -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-primal-dark text-white font-marathi overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-primal-dark/95 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-4 md:px-6 py-2 md:py-3 flex justify-between items-center">
+            <!-- Updated Logo Section -->
+            <div class="flex flex-col items-start cursor-pointer hover:scale-105 transition-transform group leading-none">
+                <div class="text-2xl md:text-3xl font-bold text-white tracking-wider animate-glow">
+                    PRIMAL <span class="text-primal-green">OS</span>
+                </div>
+                <span class="text-xs md:text-sm font-bold text-gray-400 mt-1 font-marathi tracking-wide group-hover:text-primal-green transition-colors">
+                    तुमची गुप्त शक्ती
+                </span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-lg font-medium">
+                <a href="#" class="buy-trigger bg-primal-green text-black px-6 py-2 rounded-full font-bold hover:bg-white transition-colors animate-pulse text-base">Buy Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 md:pt-20">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-primal-dark/80 to-primal-dark z-10"></div>
+            <img src="https://i.ibb.co/CpnpX3Kj/g12hzrt2r3jn7pxqnndside8urvw.webp" alt="Primal OS Animated Cover" class="w-full h-full object-cover opacity-40 animate-slow-zoom z-0">
+        </div>
+        
+        <div class="container mx-auto px-5 md:px-6 z-10 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            <div class="fade-in-up order-2 md:order-1 text-center md:text-left">
+                <!-- Author Badge / Intro -->
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-5">
+                    <img src="https://i.ibb.co/ZRhf1yDK/yui.jpg" alt="Pritam Jagtap" class="w-12 h-12 rounded-full border-2 border-primal-green/60 object-cover shadow-[0_0_15px_rgba(74,222,128,0.4)]">
+                    <p class="text-primal-green font-bold text-sm md:text-base tracking-widest uppercase bg-black/40 inline-block px-3 py-1.5 rounded backdrop-blur-sm">
+                        DIGITALCONFVISIONS सादर करत आहे
+                    </p>
+                </div>
+
+                <h1 class="text-5xl xs:text-6xl md:text-8xl font-extrabold leading-tight mb-4 md:mb-6 drop-shadow-lg animate-glow">
+                    The Primal <span class="text-primal-green">OS</span>
+                </h1>
+                <h2 class="type-on-scroll text-2xl xs:text-3xl md:text-4xl font-medium mb-5 md:mb-6 text-gray-100 leading-snug">
+                    श्वास: मानवाच्या पुढच्या उत्क्रांतीची ब्लूप्रिंट
+                </h2>
+                <p class="type-on-scroll text-lg md:text-xl text-gray-200 mb-8 md:mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed-marathi font-medium">
+                    तुमच्या जीवनाचे 'प्रायमल ओएस' रीबूट करा. आता तुम्हीच तुमचं नवीन व्हर्जन!
+                </p>
+                <div class="flex flex-col xs:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#" class="buy-trigger w-full xs:w-auto text-center bg-primal-green text-black font-bold py-4 px-10 rounded-full hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(74,222,128,0.6)] active:scale-95 text-lg">
+                        प्रवास सुरू करा
+                    </a>
+                    <a href="#" class="buy-trigger w-full xs:w-auto text-center text-base border-2 border-primal-green text-primal-green px-8 py-3.5 rounded-full hover:bg-primal-green hover:text-black transition-colors font-semibold">
+                        पुस्तिका मिळवा
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center fade-in-up delay-200 order-1 md:order-2 mb-4 md:mb-0">
+                <div class="relative w-32 xs:w-40 md:w-56 rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(74,222,128,0.2)] border-2 border-primal-green/40">
+                    <img src="https://i.ibb.co/8LFxSQqL/a8k1clxpx2du0syyxi6qlg3s4r51.png" alt="The Primal OS Book Cover" class="w-full h-auto transform hover:scale-105 transition-duration-500">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro / Concept Section -->
+    <section id="concept" class="py-16 md:py-24 bg-white text-black">
+        <div class="container mx-auto px-5 md:px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="type-on-scroll text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-gray-900">श्वास: तुमची गुप्त शक्ती</h2>
+                <p class="type-on-scroll text-xl md:text-2xl text-gray-800 leading-relaxed-marathi mb-6 font-medium">
+                    तुम्ही कधी विचार केला आहे का, की तुमच्या जीवनातील सर्वात महत्त्वाचा, सर्वात मूलभूत आणि तरीही सर्वात दुर्लक्षित 'अ‍ॅप' कोणता आहे? तो तुमचा श्वास आहे. 
+                    हा केवळ एक शारीरिक क्रियाकलाप नाही, तर तुमच्या अस्तित्वाचा, तुमच्या असीम शक्तीचा 'प्रायमल ओएस' (Primal OS) आहे.
+                </p>
+                <div class="mb-10 md:mb-14">
+                     <a href="#" class="buy-trigger text-green-800 font-bold border-b-4 border-green-600 hover:text-black hover:bg-green-100 transition-all px-3 py-2 text-lg">अधिक वाचा &rarr;</a>
+                </div>
+
+                <div class="grid gap-8 md:grid-cols-3 md:gap-10 mt-10 md:mt-12">
+                    <div class="p-8 border-2 border-gray-100 rounded-2xl hover:shadow-2xl transition-all hover:-translate-y-1 bg-gray-50">
+                        <div class="text-primal-green text-5xl mb-4 md:mb-6 animate-pulse">⚡</div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">ऊर्जा स्रोत</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">तुमच्या शरीराच्या प्रत्येक पेशीला ऊर्जा देणारा स्त्रोत.</p>
+                    </div>
+                    <div class="p-8 border-2 border-gray-100 rounded-2xl hover:shadow-2xl transition-all hover:-translate-y-1 bg-gray-50">
+                        <div class="text-primal-green text-5xl mb-4 md:mb-6 animate-pulse">🧠</div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">मेंदूचा रिमोट</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">मेंदूच्या लहरी आणि भावनांना नियंत्रित करणारे साधन.</p>
+                    </div>
+                    <div class="p-8 border-2 border-gray-100 rounded-2xl hover:shadow-2xl transition-all hover:-translate-y-1 bg-gray-50">
+                        <div class="text-primal-green text-5xl mb-4 md:mb-6 animate-pulse">🧬</div>
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">DNA सुधारणा</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">'एपिजेनेटिक्स' द्वारे जनुकीय अभिव्यक्ती बदलण्याची गुरुकिल्ली.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-14">
+                    <a href="#" class="buy-trigger inline-block bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-primal-green hover:text-black transition-all shadow-xl hover:scale-105">
+                        शक्ती जागृत करा
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section (Dark) -->
+    <section id="science" class="py-16 md:py-24 bg-primal-gray border-t border-gray-800">
+        <div class="container mx-auto px-5 md:px-6">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="type-on-scroll text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-white leading-tight">
+                        मेंदूचा "स्विच ऑन" बटण: <span class="text-primal-green block mt-2 animate-glow">श्वासाने बुद्धीला जागं करा!</span>
+                    </h2>
+                    <p class="type-on-scroll text-gray-300 mb-6 md:mb-8 leading-relaxed-marathi text-lg md:text-xl">
+                        तुमचा मेंदू हा तुमच्या शरीरातील सर्वात जास्त ऊर्जा वापरणारा अवयव आहे. मेंदूला आणि शरीराच्या पेशींना आवश्यक ऊर्जा मिळत नाही जेव्हा आपण उथळ श्वास घेतो.
+                    </p>
+                    <p class="type-on-scroll text-gray-300 mb-6 md:mb-8 leading-relaxed-marathi text-lg md:text-xl">
+                        खोल श्वासाद्वारे 'व्हॅगस नर्व्ह' सक्रिय होते, जी तुमच्या शरीराला 'रेस्ट अँड डायजेस्ट' मोडमध्ये आणते. यामुळे मेंदूची कार्यक्षमता वाढते आणि 'न्यूरोप्लास्टिसिटी'ला चालना मिळते.
+                    </p>
+                    <ul class="space-y-4 md:space-y-5 text-lg text-gray-200">
+                        <li class="flex items-start space-x-4">
+                            <span class="h-3 w-3 mt-2 bg-primal-green rounded-full flex-shrink-0 shadow-[0_0_10px_#4ade80]"></span>
+                            <span>ऑक्सिजनचा समृद्ध प्रवाह (Premium Petrol)</span>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <span class="h-3 w-3 mt-2 bg-primal-green rounded-full flex-shrink-0 shadow-[0_0_10px_#4ade80]"></span>
+                            <span>तणाव हार्मोन्स (Cortisol) कमी करणे</span>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <span class="h-3 w-3 mt-2 bg-primal-green rounded-full flex-shrink-0 shadow-[0_0_10px_#4ade80]"></span>
+                            <span>भावनांवर नियंत्रण आणि आत्मविश्वास</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10">
+                        <a href="#" class="buy-trigger inline-block bg-primal-green text-black font-bold py-4 px-10 rounded-lg hover:bg-white transition-colors text-lg shadow-[0_4px_14px_0_rgba(74,222,128,0.39)]">
+                            विज्ञानाचा सखोल अभ्यास
+                        </a>
+                    </div>
+                </div>
+                <div class="relative order-1 md:order-2">
+                     <img src="https://i.ibb.co/d4YXF9S0/download-28.png" alt="Primal OS Scientific Concept" class="rounded-2xl shadow-2xl opacity-90 border border-gray-700 w-full h-auto transform hover:scale-[1.02] transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section id="techniques" class="py-16 md:py-24 bg-black">
+        <div class="container mx-auto px-5 md:px-6">
+            <div class="text-center mb-12 md:mb-20">
+                <span class="text-primal-green font-bold tracking-[0.2em] uppercase text-sm md:text-base animate-glow">The Toolkit</span>
+                <h2 class="type-on-scroll text-3xl md:text-5xl font-bold mt-4 text-white leading-tight">५ मिनिटांत आयुष्य बदलणारे फॉर्म्युले</h2>
+                <p class="type-on-scroll text-gray-400 mt-4 md:mt-6 text-lg">तुमच्या 'प्रायमल ओएस' चे जादुई टूल्स</p>
+                <div class="mt-6">
+                    <a href="#" class="buy-trigger text-primal-green underline hover:text-white text-base font-semibold uppercase tracking-wide">टूलकिट मिळवा</a>
+                </div>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-3 md:gap-10">
+                <!-- Technique 1 -->
+                <div class="group bg-primal-gray border border-gray-800 p-8 rounded-3xl hover:border-primal-green transition-all hover:transform hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(74,222,128,0.15)]">
+                    <div class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 group-hover:text-primal-green transition-colors">01</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">४-७-८ श्वास</h3>
+                    <p class="text-sm text-primal-green mb-4 font-bold uppercase tracking-wide">शांततेचा पासवर्ड</p>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        तणावाचा विनाशक. जेव्हा चिंता किंवा भीती वाटते, तेव्हा ही पद्धत वापरा.
+                    </p>
+                    <div class="bg-black/60 p-5 rounded-xl text-base text-gray-200 font-mono border-l-4 border-primal-green">
+                        1. नाकाने ४ सेकंद श्वास घ्या<br>
+                        2. ७ सेकंद श्वास रोखून ठेवा<br>
+                        3. तोंडाने ८ सेकंद श्वास सोडा
+                    </div>
+                </div>
+
+                <!-- Technique 2 -->
+                <div class="group bg-primal-gray border border-gray-800 p-8 rounded-3xl hover:border-primal-green transition-all hover:transform hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(74,222,128,0.15)]">
+                    <div class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 group-hover:text-primal-green transition-colors">02</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">बॉक्स श्वास</h3>
+                    <p class="text-sm text-primal-green mb-4 font-bold uppercase tracking-wide">एकाग्रतेचे कवच</p>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        Navy SEALs वापरतात ती पद्धत. लक्ष केंद्रित करण्यासाठी उत्तम.
+                    </p>
+                    <div class="bg-black/60 p-5 rounded-xl text-base text-gray-200 font-mono border-l-4 border-primal-green">
+                        1. ४ सेकंद श्वास घ्या<br>
+                        2. ४ सेकंद रोखून ठेवा<br>
+                        3. ४ सेकंद सोडा<br>
+                        4. ४ सेकंद बाहेर रोखून ठेवा
+                    </div>
+                </div>
+
+                <!-- Technique 3 -->
+                <div class="group bg-primal-gray border border-gray-800 p-8 rounded-3xl hover:border-primal-green transition-all hover:transform hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(74,222,128,0.15)]">
+                    <div class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 group-hover:text-primal-green transition-colors">03</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">कपालभाती</h3>
+                    <p class="text-sm text-primal-green mb-4 font-bold uppercase tracking-wide">विजेसारखी ऊर्जा</p>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                        आळस, सुस्ती आणि 'mental fog' घालवण्यासाठी.
+                    </p>
+                    <div class="bg-black/60 p-5 rounded-xl text-base text-gray-200 font-mono border-l-4 border-primal-green">
+                        पोटाच्या स्नायूंचा वापर करून वेगाने श्वास बाहेर फेकणे.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="buy-trigger inline-block bg-primal-green text-black font-bold py-5 px-12 rounded-full hover:bg-white hover:scale-105 transition-transform shadow-[0_0_30px_rgba(74,222,128,0.5)] text-lg md:text-xl">
+                    श्वासावर प्रभुत्व मिळवा - पूर्ण गाईड
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Epigenetics / Future Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-green-950 to-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
+        <div class="container mx-auto px-5 md:px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="fade-in-up mb-10 md:mb-0">
+                    <img src="https://i.ibb.co/gZsgt1d1/download-29.png" alt="Human Energy Field" class="w-full h-auto rounded-2xl shadow-[0_0_30px_rgba(74,222,128,0.4)] border border-primal-green/30 hover:scale-[1.02] transition-transform duration-500">
+                </div>
+                <div class="text-center md:text-left fade-in-up delay-200">
+                    <h2 class="type-on-scroll text-3xl md:text-6xl font-bold mb-6 md:mb-10 text-white drop-shadow-md">तुमचं भविष्य तुमच्या श्वासात</h2>
+                    <p class="type-on-scroll text-xl md:text-3xl mb-8 md:mb-10 font-light leading-relaxed-marathi">
+                        "तुमचा श्वास, तुमचं भविष्य. केवळ भविष्यच नव्हे, तर तुमच्या वर्तमानाची प्रत्येक स्पंदने तुमच्या श्वासाच्या तालावर नर्तन करतात."
+                    </p>
+                    <p class="type-on-scroll text-gray-200 mb-10 md:mb-12 text-lg md:text-xl leading-relaxed">
+                        तुम्ही आता तुमच्या मेंदूचे 'मास्टर कंट्रोलर' आहात. श्वासाने DNA बदलण्याची गुरुकिल्ली आता तुमच्या हातात आहे. 'प्रायमल ओएस' रीबूट करा.
+                    </p>
+                    <a href="#" class="buy-trigger inline-block border-2 border-white text-white font-bold py-4 px-12 rounded-full hover:bg-white hover:text-black transition-all active:scale-95 text-lg">
+                        प्रत मिळवा
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black py-10 md:py-16 border-t border-gray-900">
+        <div class="container mx-auto px-5 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                
+                <!-- Updated Author Section in Footer with Circle Image -->
+                <div class="mb-8 md:mb-0 flex flex-col md:flex-row items-center gap-6 md:pr-8">
+                    <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-primal-green p-1 shadow-[0_0_20px_rgba(74,222,128,0.2)] hover:scale-105 transition-transform duration-300">
+                        <img src="https://i.ibb.co/ZRhf1yDK/yui.jpg" alt="Pritam Jagtap" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white">Pritam Jagtap</h3>
+                        <p class="text-primal-green text-base mt-1 animate-glow">DigitalConfvisions</p>
+                        <a href="#" class="buy-trigger inline-block mt-4 text-sm border border-gray-600 text-gray-300 px-5 py-2 rounded-full hover:border-primal-green hover:text-primal-green hover:bg-gray-900 transition-colors">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="flex space-x-8 items-center mt-6 md:mt-0">
+                    <a href="https://www.instagram.com/prityaa24?igsh=c3B6b2ptejUwMjF4&utm_source=qr" target="blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primal-green transition-colors text-lg">Instagram</a>
+                    <a href="mailto:jagtappritam73@gmail.com" class="text-gray-400 hover:text-primal-green transition-colors text-lg">jagtappritam73@gmail.com</a>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-gray-600 text-sm md:text-base border-t border-gray-900 pt-8">
+                &copy; 2025 DigitalConfvisions. All rights reserved. The Primal OS.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Discount Modal (UPDATED WITH 2 OPTIONS + FREE GIFT) -->
+    <div id="offerModal" class="fixed inset-0 z-[60] hidden flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 animate-fade-in">
+        <div class="bg-primal-gray border-2 border-primal-green rounded-2xl max-w-lg w-full overflow-hidden shadow-[0_0_50px_rgba(74,222,128,0.3)] relative transform transition-all scale-100 flex flex-col max-h-[90vh]">
+            <!-- Close Button -->
+            <button id="closeModal" class="absolute top-3 right-3 text-gray-400 hover:text-white bg-black/50 rounded-full p-2 z-10 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- Scrollable Content Area -->
+            <div class="overflow-y-auto custom-scrollbar max-h-[80vh]">
+                <!-- Header Image -->
+                <div class="relative w-full h-40 bg-black flex items-center justify-center p-4 border-b border-gray-800">
+                        <img src="https://i.ibb.co/8LFxSQqL/a8k1clxpx2du0syyxi6qlg3s4r51.png" alt="The Primal OS Book" class="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(74,222,128,0.5)]">
+                </div>
+                
+                <!-- Content -->
+                <div class="p-6">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-2 font-marathi text-center">The Primal OS पुस्तिका मिळवा</h3>
+                    <p class="text-gray-400 text-sm mb-6 font-marathi text-center">तुमच्या पसंतीची पद्धत निवडा:</p>
+                    
+                    <!-- Option 1: UPI -->
+                    <div class="bg-gray-900 border border-primal-green/50 rounded-xl p-4 mb-4 relative overflow-hidden group hover:border-primal-green transition-colors">
+                        <div class="absolute top-0 right-0 bg-green-600 text-black text-[10px] md:text-xs font-bold px-2 py-1 uppercase tracking-wider">५०% सूट</div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">UPI पेमेंट (Direct)</h4>
+                                <p class="text-xs text-gray-400">GooglePay / PhonePe / Paytm</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="block text-2xl font-bold text-primal-green">₹५०</span>
+                                <span class="block text-xs text-gray-500 line-through">₹१००</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919372035409?text=Mala%20Primal%20OS%20pustika%2050rs%20discount%20offer%20madhe%20havi%20aahe%20(Via%20UPI)" target="_blank" class="mt-3 w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95 text-sm md:text-base">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            WhatsApp (₹५०)
+                        </a>
+                    </div>
+
+                    <!-- Option 2: Gumroad -->
+                    <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 mb-6 relative group hover:border-gray-500 transition-colors">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-lg font-bold text-white">Gumroad (Online)</h4>
+                            <span class="text-xl font-bold text-white">₹१००</span>
+                        </div>
+                        <a href="https://prityaa379.gumroad.com/l/mmetwp" target="_blank" class="w-full bg-pink-600 hover:bg-pink-500 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95 text-sm md:text-base mb-3">
+                           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M16.038 3.615L2.308 3.616l4.288 12.56L1.154 20.385l17.442-.002 4.25-12.288-6.808-4.48zm-3.69 8.288l-1.09-3.212 5.02-.002 1.106 3.214H12.35z"/></svg>
+                           Gumroad वर खरेदी करा
+                        </a>
+                        <div class="bg-black/40 p-3 rounded text-xs text-gray-400 leading-relaxed">
+                            <strong class="text-gray-300 block mb-1">Gumroad म्हणजे काय?</strong>
+                            हे क्रिएटर्ससाठी सर्वात सुरक्षित जागतिक प्लॅटफॉर्म आहे. तुम्हाला खात्री करण्यासाठी तुम्ही आधी खाली दिलेले <span class="text-primal-green">मोफत गिफ्ट</span> डाऊनलोड करून पाहू शकता.
+                        </div>
+                    </div>
+
+                    <!-- Free Gift Section -->
+                    <div class="border-t border-dashed border-gray-700 pt-5 text-center">
+                        <p class="text-primal-green text-sm font-bold uppercase tracking-wide mb-2 animate-pulse">🎁 मोफत गिफ्ट (Free Sample)</p>
+                        <p class="text-gray-300 text-sm mb-3">Gumroad नक्की काय आहे आणि तेथून डिजिटल उत्पादन कसे डाऊनलोड करायचे, हे समजण्यासाठी हे मोफत गाईड मिळवा.</p>
+                        <a href="https://prityaa379.gumroad.com/l/uplaw" target="_blank" class="inline-flex items-center text-white border border-gray-600 bg-gray-900 hover:bg-gray-800 px-4 py-2 rounded-full text-sm transition-colors hover:border-primal-green">
+                            <svg class="w-4 h-4 mr-2 text-primal-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            मोफत डाऊनलोड करा & शिका
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Standard Animation Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only scroll if it's not a modal trigger
+                if(!this.classList.contains('buy-trigger')){
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
