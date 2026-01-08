@@ -1,0 +1,105 @@
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+/* Background Pulse Animation */
+@keyframes slow-zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animate-slow-zoom {
+    animation: slow-zoom 20s infinite ease-in-out;
+}
+
+/* Text Glow Animation */
+@keyframes text-glow-pulse {
+    0% { text-shadow: 0 0 5px rgba(74, 222, 128, 0.4), 0 0 10px rgba(74, 222, 128, 0.2); }
+    50% { text-shadow: 0 0 20px rgba(74, 222, 128, 0.8), 0 0 30px rgba(74, 222, 128, 0.6); }
+    100% { text-shadow: 0 0 5px rgba(74, 222, 128, 0.4), 0 0 10px rgba(74, 222, 128, 0.2); }
+}
+
+.animate-glow {
+    animation: text-glow-pulse 3s infinite ease-in-out;
+}
+
+/* Typewriter Cursor Styles */
+.type-cursor::after {
+    content: '|';
+    color: #4ade80;
+    animation: blink-cursor 0.8s step-end infinite;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Ensure min-height during typing to prevent layout shift */
+.type-on-scroll {
+    min-height: 1.5em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+@media (min-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4ade80;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Modal specific scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #111;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4ade80;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards; }
